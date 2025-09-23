@@ -125,14 +125,14 @@ table {
 
 @media only screen and (max-width: 600px) {
     #contenedorBotones{
-        bottom:10%;
+        top:10%;
     }
 #background{
     width:60vw;
     height: 90vh;
 }
 #hairback,#shoes,#clothes,#alas,#patas,#orejas,#manos,#hairfront,#bocas{
-    bottom:15%;
+    top:20%;
 max-width: 70vw;
 max-height:100vh;
 }
