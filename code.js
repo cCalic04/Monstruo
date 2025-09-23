@@ -1,5 +1,17 @@
 
 window.onload=init;
+var musik = new Audio('https://github.com/cCalic04/Monstruo/blob/main/Monstruos.mp3?raw=true');
+musik.loop = true;
+
+
+function musica() {
+    if (musik.paused) {
+        musik.play(); 
+    } else {
+        musik.pause(); 
+    }
+}
+
 
 function init()
 {
