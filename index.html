@@ -1,37 +1,54 @@
 <html>
    <head> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
        <link rel="stylesheet" type="text/css" href="style.css">
            <script src="code.js"></script>
-
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <title> Crea tu monstruo </title>
 <body>
+
+    <audio
+    id="musica1"
+    src="https://github.com/cCalic04/Monstruo/blob/main/Monstruos.mp3?raw=true" 
+    autoplay
+    loop
+  ></audio>
+
     <div id="container">
+
     <div id="background">
-    <div id="hairback"></div>    
-    <div id="man"> <!-- pantalla de inicio --> </div>
-    <div id="alas"> </div>
-    <div id="patas"> </div>
-    <div id="orejas"> </div>
-    <div id="clothes"> <!-- cuerpos --> </div>
-    <div id="manos"> </div>
-    <div id="shoes"><!-- cabezas --> </div>    
-    <div id="hairfront"><!-- ojos --></div>
-    <div id="bocas"> </div>
+
+            <div id="hairback"></div>    
+            <div id="man"> <!-- pantalla de inicio --> </div>
+            <div id="alas"> </div>
+            <div id="patas"> </div>
+            <div id="orejas"> </div>
+            <div id="clothes"> <!-- cuerpos --> </div>
+            <div id="manos"> </div>
+            <div id="shoes"><!-- cabezas --> </div>    
+            <div id="hairfront"><!-- ojos --></div>
+            <div id="bocas"> </div>
+    
 
     </div>
         
-        
-        
-        <input type="button" value="NEXT" id="nexthair" onclick="nexthair()">
-        <input type="button" value="NEXT" id="nextorejas" onclick="nextorejas()">
-        <input type="button" value="NEXT" id="nextbocas" onclick="nextbocas()">
-        <input type="button" value="NEXT" id="nextmanos" onclick="nextmanos()">
-        <input type="button" value="NEXT" id="nextalas" onclick="nextalas()">
-        <input type="button" value="NEXT" id="nextpatas" onclick="nextpatas()">
-        <input type="button" value="NEXT" id="nextdress" onclick="nextdress()">
-        <input type="button" value="NEXT" id="nextshoe" onclick="nextshoe()">
+     <div id="contenedorBotones">
+        <input type="button" value="Orejas" class="botones id="nextorejas" onclick="nextorejas()">
+        <input type="button" value="Ojos" class="botones "id="nexthair" onclick="nexthair()">
+        <input type="button" value="Cabeza" class="botones id="nextshoe" onclick="nextshoe()">
+        <input type="button" value="Bocas" class="botones id="nextbocas" onclick="nextbocas()">
+        <input type="button" value="Manos" class="botones id="nextmanos" onclick="nextmanos()">
+        <input type="button" value="Alas" class="botones id="nextalas" onclick="nextalas()">
+        <input type="button" value="Cuerpo" class="botones id="nextdress" onclick="nextdress()">
+        <input type="button" value="Patas" class="botones id="nextpatas" onclick="nextpatas()">
     
+     </div>   
+        
     </div>
     
     

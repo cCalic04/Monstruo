@@ -53,25 +53,121 @@ table {
 #container{
     position: absolute;
     margin:auto;
-      overflow: hidden;
+    overflow: hidden;
     width: 100vw;
     height :100vh;
-   background-color: aqua;
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#contenedorBotones{
+    width: 5vw;
+    height: 60vh;
+    position: relative;
+    flex-direction: row;
+    align-items: right;
+    justify-content: center;
+ 
 }
 
 #background{
-    position:absolute;
-    width:100vw;
-    height:100vh;
-    left:100px;
-    right: 100px;
-    background-color: rebeccapurple;
-    background-image: url("https://raw.githubusercontent.com/adreejish/Dress-up-game/refs/heads/master/resized_background.png");
-    
-    
-    
-    
+    border-radius: 12px;
+    position: relative;
+    width:30vw;
+    height:60vh;
+    background-color: #8f1a87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: fondo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin-right: 1%;
+
 }
+
+@keyframes fondo {
+    0% {background-color: #8f1a87;}
+    25% {background-color: #6D1467;}
+    50% {background-color: #1e0525;}
+    75% {background-color: #6D1467;}
+    100% {background-color: #8f1a87;}
+    }
+    
+
+    .botones {
+        border-radius: 12px;
+        width: 120px;
+        height: 50px;
+        background-color: #f3e2f8;
+        font-size: 20px;
+        margin-bottom: 25%;
+        font-family: "Concert One", sans-serif;
+        font-weight: 500;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        color: #4b0d47; 
+        cursor: pointer;
+    }
+    
+    .botones:hover {
+        background-color: #a295f5; /
+        transform: translateY(-3px); 
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    }
+    
+    .botones:active {
+        transform: translateY(1px); 
+    }
+
+@media only screen and (max-width: 600px) {
+    #contenedorBotones{
+        bottom:10%;
+    }
+#background{
+    width:60vw;
+    height: 90vh;
+}
+#hairback,#shoes,#clothes,#alas,#patas,#orejas,#manos,#hairfront,#bocas{
+    bottom:15%;
+max-width: 70vw;
+max-height:100vh;
+}
+.botones{
+    font-size: 15px;
+    width: 80px;
+    height:30px;
+    align-items: start;
+}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #contenedorBotones{
+        top:5%;
+    }
+#background{
+    width:60vw;
+    height: 90vh;
+}
+#hairback,#shoes,#clothes,#alas,#patas,#orejas,#manos,#hairfront,#bocas{
+    bottom:25%;
+max-width: 70vw;
+max-height:100vh;
+}
+.botones{
+    font-size: 15px;
+    width: 120px;
+    height:70px;
+    align-items: start;
+}
+
+}
+
+
 
 #hairback{
      position:absolute;
@@ -580,7 +676,7 @@ table {
     background-image: url("https://raw.githubusercontent.com/cCalic04/Monstruo/refs/heads/main/alas3.PNG");
 }
 
-
+/*
 #nextorejas{
     position:absolute;
     right:50px;
@@ -629,7 +725,7 @@ table {
     right:50px;
     top:450px;
 }
-
+*/
 
 
 #prevhair{
